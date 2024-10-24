@@ -21,9 +21,6 @@ public class Rol {
     //Muchos roles le podran pertenecer a varios usuarios
     @ManyToMany(mappedBy = "roles")
     private Set<Usuario> usuarios = new HashSet<>();
-
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
